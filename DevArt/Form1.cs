@@ -26,7 +26,17 @@ namespace DevArt
         FileModel file = new FileModel();
 
         private void button2_Click(object sender, EventArgs e)
-        {    
+        {
+
+            #region Create DB scrypt
+            // SQLiteConnection.CreateFile("MyDatabase.sqlite");
+            //  m_dbConnection =new SQLiteConnection("Data Source=MyDatabase.sqlite;Version=3;");
+            // m_dbConnection.Open();
+            //  string sql = "create table Docs (Id integer primary key , Name string, Body Blob);
+            // SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
+            //  command.ExecuteNonQuery();
+            #endregion
+
             if (textBox1.Text == String.Empty)
             {
                 MessageBox.Show("Введите имя файла");
