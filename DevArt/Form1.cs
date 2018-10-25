@@ -27,7 +27,7 @@ namespace DevArt
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            // I add DevArt library for SQlite but i doesn't have enough time to make this task with it=((((
             #region Create DB scrypt
             // SQLiteConnection.CreateFile("MyDatabase.sqlite");
             //  m_dbConnection =new SQLiteConnection("Data Source=MyDatabase.sqlite;Version=3;");
@@ -83,6 +83,7 @@ namespace DevArt
                     FilePathBox.Text = openFileDialog1.FileName;                    
                     file.Body = body;
                 }
+                richTextBox1.Text = System.Text.Encoding.UTF8.GetString(file.Body);
 
             }            
         }
